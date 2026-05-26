@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Divisão da Conta de Energia</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <div class="container">
+    <h1>Divisão da Conta de Energia</h1>
+    <input id="valorConta" type="number" placeholder="Valor total da conta (R$)">
+    <input id="consumoTotal" type="number" placeholder="Consumo total (kWh)">
+    <input id="consumoCasa1" type="number" placeholder="Consumo Casa 1 (kWh)">
+    <button onclick="calcular()">Calcular</button>
+    <p id="resultadoCasa1"></p>
+    <p id="resultadoCasa2"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
