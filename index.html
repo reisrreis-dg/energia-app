@@ -13,10 +13,22 @@
     <input id="valorConta" type="number" placeholder="Valor total da conta (R$)">
     <input id="consumoTotal" type="number" placeholder="Consumo total (kWh)">
     <input id="consumoCasa1" type="number" placeholder="Consumo Casa 1 (kWh)">
+    
     <button onclick="calcular()">Calcular</button>
+    <button onclick="limpar()">Limpar</button>
+    
     <p id="resultadoCasa1"></p>
     <p id="resultadoCasa2"></p>
   </div>
+
   <script src="script.js"></script>
+  <script>
+    // Registro do Service Worker para funcionar offline
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("service-worker.js")
+        .then(() => console.log("Service Worker registrado"))
+        .catch(err => console.error("Erro no Service Worker", err));
+    }
+  </script>
 </body>
 </html>
